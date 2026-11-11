@@ -106,11 +106,6 @@ button:hover {
   background: var(--border);
 }
 
-.counter-buttons {
-  display: flex;
-  gap: 10px;
-}
-
 button:active {
   transform: translateY(1px);
 }
@@ -118,6 +113,13 @@ button:active {
 button:focus-visible {
   outline: 3px solid var(--accent-border);
   outline-offset: 2px;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 h1,
